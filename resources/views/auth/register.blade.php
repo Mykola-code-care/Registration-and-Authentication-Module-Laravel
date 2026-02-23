@@ -43,16 +43,16 @@
         <div class="mt-4">
             <label class="flex items-start gap-2">
                 <input type="checkbox" name="agreement" value="1" required
-                    class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500 mt-1">
-                <span class="text-sm text-gray-700">
-                    {{ __('I accept the') }} <a href="{{ route('agreement') }}" target="_blank" class="underline text-indigo-600 hover:text-indigo-800">{{ __('User Agreement') }}</a>.
+                    class="rounded border-slate-500 bg-slate-700 text-indigo-500 focus:ring-indigo-500 mt-1">
+                <span class="text-sm text-slate-400">
+                    {{ __('I accept the') }} <a href="{{ route('agreement') }}" target="_blank" class="underline text-indigo-400 hover:text-indigo-300">{{ __('User Agreement') }}</a>.
                 </span>
             </label>
             <x-input-error :messages="$errors->get('agreement')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+            <a class="underline text-sm text-slate-400 hover:text-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-800" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
 
